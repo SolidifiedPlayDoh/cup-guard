@@ -4,37 +4,61 @@ i made an entire desktop application for one (1) roblox mini-game.
 
 that's it. that's the project.
 
-the game is [Don't Ring the Bell! 🔔](https://www.roblox.com/share?code=33dfaa1376d41941b6b297b8a568dbd4&type=ExperienceDetails&stamp=1783032244926). you sit at a table. there's a red cup. sometimes it moves. if you react too slow you lose. i got tired of losing so i wrote screen capture code at 2am like a normal person.
+the game is [Don't Ring the Bell! 🔔](https://www.roblox.com/share?code=33dfaa1376d41941b6b297b8a568dbd4&type=ExperienceDetails&stamp=1783032244926). you sit at a table. there's a red cup. sometimes it moves. if you react too slow you lose. i wanted to cheat because i can :3
 
-![me explaining to my therapist why i needed pyinstaller for roblox cups](docs/hero.png)
+<p align="center">
+  <img src="docs/hero.png" alt="cup guard running over roblox" width="100%">
+</p>
 
 ## demo
 
-one full round with cup guard running. yes i recorded myself playing roblox with a custom overlay. we all have our thing.
+one full round with cup guard running.
 
-<video src="https://github.com/SolidifiedPlayDoh/cup-guard/raw/main/docs/demo.mp4" controls width="100%">
-  <a href="https://github.com/SolidifiedPlayDoh/cup-guard/raw/main/docs/demo.mp4">watch the demo</a>
-</video>
+<p align="center">
+  <video src="https://github.com/SolidifiedPlayDoh/cup-guard/releases/download/demo-v1/demo.mp4" controls playsinline width="100%">
+    <a href="https://github.com/SolidifiedPlayDoh/cup-guard/releases/download/demo-v1/demo.mp4">watch the demo</a>
+  </video>
+</p>
 
 ## what it does
 
-- watches a tiny strip of pixels on the red cup rim (not the whole screen, i'm not insane)
-- when the cup leaves your spot, presses **E** (don't ring)
-- then presses **Q** (grab cup) after a random 2.5-4 second delay so it doesn't look like a bot wrote it (it did)
-- little overlay in the top right so you can pretend you're just really good
+- watches a tiny strip of pixels on the red cup rim (not the whole screen that would be slow)
+- when the cup leaves your spot, it presses **E** (the don't ring button)
+- then presses Q after a random 2.5–4 second delay.if the timing were 0 or a fixed amount of time after E. the other player starts waiting for that. random delay makes you harder to sit on. (i swear people mentally anchor around like ~6 seconds in this game when they're trying to predict you. might just be me. might be all of us.. idk)
+- little overlay in the top right so you can see it and stuff
 
 ## how to use
 
 1. open [the game](https://www.roblox.com/share?code=33dfaa1376d41941b6b297b8a568dbd4&type=ExperienceDetails&stamp=1783032244926)
-2. sit at the cup table
-3. run cup guard
-4. put your mouse on the **bottom rim** of the red cup
-5. press **`0`**
-6. green box in the preview = you're locked on. status says CUP ON. go touch grass (play the round)
+2. run cup guard so its ready
+3. sit at the cup table with another player
+5. put your mouse on the **bottom rim** of the red cup (press "Need Help?" in the app if confused)
+6. press **`0`**
+7. green box in the preview = you're locked on. status says CUP ON. now you can sit back and watch yourself win without actualy doing anything! congrats. you are now watching a video game. great use of time (do the dishes) :3
 
-press **`0`** again anytime to recalibrate. moved seats? camera weird? press 0. it's fine.
+press **`0`** again anytime to recalibrate. moved seats? (the lighting in the game requires you to recalibrate every time you move seats). camera weird? press 0. it's fine.
 
-stuck? hit **Need help?** in the overlay. i included screenshots because i care about ux now apparently.
+stuck? hit **Need help?** in the overlay. i included screenshots because i care about u <3
+
+## permissions (sorry)
+
+| platform | what it needs | why |
+|----------|---------------|-----|
+| macOS | Screen Recording | to look at the cup |
+| macOS | Accessibility | to fake key presses |
+| Windows | screen capture privacy | same deal |
+
+give permissions to Cup Guard, or Terminal/Cursor if you're running from source. restart after. macOS will fight you on this. stay strong.
+
+## download!
+
+pre-built binaries on [Releases](https://github.com/SolidifiedPlayDoh/cup-guard/releases):
+
+- macOS: `CupGuard.app` in a zip
+- Windows: `CupGuard.exe`
+
+github actions builds them when i tag a version. fancy.
+
 
 ## install (from source)
 
@@ -53,25 +77,6 @@ cli mode if you hate GUIs:
 ```bash
 uv run cup-guard start
 ```
-
-## permissions (sorry)
-
-| platform | what it needs | why |
-|----------|---------------|-----|
-| macOS | Screen Recording | to look at the cup |
-| macOS | Accessibility | to fake key presses |
-| Windows | screen capture privacy | same deal |
-
-give permissions to Cup Guard, or Terminal/Cursor if you're running from source. restart after. macOS will fight you on this. stay strong.
-
-## downloads
-
-pre-built binaries on [Releases](https://github.com/SolidifiedPlayDoh/cup-guard/releases):
-
-- macOS: `CupGuard.app` in a zip
-- Windows: `CupGuard.exe`
-
-github actions builds them when i tag a version. fancy.
 
 ## faq
 

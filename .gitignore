@@ -15,5 +15,8 @@ screen_test.png
 .DS_Store
 Thumbs.db
 
+# Large media (hosted on GitHub Releases instead)
+docs/*.mp4
+
 # PyInstaller
 *.spec.bak
