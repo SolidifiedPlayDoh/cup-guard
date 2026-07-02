@@ -4,7 +4,17 @@ i made an entire desktop application for one (1) roblox mini-game.
 
 that's it. that's the project.
 
-the game is [Don't Ring the Bell! 🔔](https://www.roblox.com/share?code=33dfaa1376d41941b6b297b8a568dbd4&type=ExperienceDetails&stamp=1783032244926). you sit at a table. there's a red cup. sometimes it moves. if you react too slow you lose. i wanted to cheat because i can :3
+<p align="center">
+  <a href="https://www.roblox.com/games/127017819698509/Dont-Ring-the-Bell">
+    <img src="docs/roblox-game.png" alt="Don't Ring the Bell on Roblox" width="180">
+  </a>
+  <br>
+  <strong><a href="https://www.roblox.com/games/127017819698509/Dont-Ring-the-Bell">[☀️] Don't Ring the Bell! 🔔</a></strong>
+  <br>
+  <sub>by Screaming Chicken Studios · click to play</sub>
+</p>
+
+you sit at a table. there's a red cup. sometimes it moves. if you react too slow you lose. i wanted to cheat because i can :3
 
 <p align="center">
   <img src="docs/hero.png" alt="cup guard running over roblox" width="100%">
@@ -29,7 +39,7 @@ one full round with cup guard running.
 
 ## how to use
 
-1. open [the game](https://www.roblox.com/share?code=33dfaa1376d41941b6b297b8a568dbd4&type=ExperienceDetails&stamp=1783032244926)
+1. open [the game](https://www.roblox.com/games/127017819698509/Dont-Ring-the-Bell)
 2. run cup guard so its ready
 3. sit at the table in the game with another player
 5. put your mouse on the **bottom rim** of the red cup (press "Need Help?" in the app if confused)
@@ -48,7 +58,7 @@ stuck? hit **Need help?** in the overlay. i included screenshots because i care 
 | macOS | Accessibility | to fake key presses |
 | Windows | screen capture privacy | same deal |
 
-give permissions to Cup Guard, or Terminal/Cursor if you're running from source. restart after. macOS will fight you on this. stay strong.
+give permissions to Cup Guard, or Terminal/Cursor if you're running from source. restart after. macOS will fight you on this because apple hates fun.
 
 ## download! (simple :3)
 
@@ -59,24 +69,6 @@ one click:
 
 more releases on [GitHub](https://github.com/SolidifiedPlayDoh/cup-guard/releases) if you want older builds or whatever (not like they are gonna be more than a day old if that)
 
-## install (from source) (elite nerd mode (epic))
-
-you need python 3.11+ and [uv](https://docs.astral.sh/uv/) because i have standards (barely).
-
-```bash
-git clone https://github.com/SolidifiedPlayDoh/cup-guard.git
-cd cup-guard
-uv venv
-uv pip install -e .
-./run.sh
-```
-
-cli mode if you hate GUIs:
-
-```bash
-uv run cup-guard start
-```
- 
 ## faq
 
 ### is this against roblox TOS?
@@ -126,6 +118,23 @@ yes. toggles in the overlay. you can also just use it as a fancy red pixel detec
 | Sensitivity | lower = triggers sooner |
 | Need help? | pictures for confused people (me) |
 
+## install (from source) (elite nerd mode (epic))
+
+you need python 3.11+ and [uv](https://docs.astral.sh/uv/) because i have standards (barely).
+
+```bash
+git clone https://github.com/SolidifiedPlayDoh/cup-guard.git
+cd cup-guard
+uv venv
+uv pip install -e .
+./run.sh
+```
+
+cli mode if you hate GUIs:
+
+```bash
+uv run cup-guard start
+```
 ## build it yourself
 
 ```bash
@@ -153,8 +162,8 @@ cup-guard test-capture # "is macOS blocking me" diagnostic
 
 [MIT](LICENSE). it is what it is.
 
-no warranty. no support. no promises. the software is provided "as is" and if something breaks, that's life.
+no warranty. no support. no promises. the software is provided "as is" and if something breaks, that's life. (but i might fix it in new release)
 
-if roblox (or anyone else) bans you, mutes you, or sends you to gamer jail for using this, that's your fault not mine. you chose to automate a cup game. i can't stop you from making decisions.
+if roblox (or anyone else) bans you, or sends you to gamer jail for using this, that's your fault not mine. you chose to automate a cup game. i can't stop you from making decisions. you can give a horse to a drink but you cant make it water
 
-if this gets you to champion rank please don't tell anyone i helped.
+if this gets you to champion rank. nice. but tell noone. 
