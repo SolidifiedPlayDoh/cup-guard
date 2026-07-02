@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -e ".[dev]" pyinstaller
+      - name: Build .app
+        run: uv run pyinstaller CupGuard.spec --noconfirm
+      - name: Zip macOS app
+        run: |
+          cd dist
+          ditto -c -k --sequesterRsrc --keepParent CupGuard.app CupGuard-macOS-arm64.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CupGuard-macOS
+          path: dist/CupGuard-macOS-arm64.zip
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -e . pyinstaller
+      - name: Build exe
+        run: uv run pyinstaller CupGuard-win.spec --noconfirm
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CupGuard-Windows
+          path: dist/CupGuard.exe
+
+  release:
+    needs: [build-macos, build-windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            artifacts/CupGuard-macOS/CupGuard-macOS-arm64.zip
+            artifacts/CupGuard-Windows/CupGuard.exe
+          generate_release_notes: true
