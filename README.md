@@ -31,7 +31,7 @@ one full round with cup guard running.
 
 1. open [the game](https://www.roblox.com/share?code=33dfaa1376d41941b6b297b8a568dbd4&type=ExperienceDetails&stamp=1783032244926)
 2. run cup guard so its ready
-3. sit at the cup table with another player
+3. sit at the table in the game with another player
 5. put your mouse on the **bottom rim** of the red cup (press "Need Help?" in the app if confused)
 6. press **`0`**
 7. green box in the preview = you're locked on. status says CUP ON. now you can sit back and watch yourself win without actualy doing anything! congrats. you are now watching a video game. great use of time (do the dishes) :3
@@ -50,17 +50,17 @@ stuck? hit **Need help?** in the overlay. i included screenshots because i care 
 
 give permissions to Cup Guard, or Terminal/Cursor if you're running from source. restart after. macOS will fight you on this. stay strong.
 
-## download!
+## download! (simple :3)
 
-pre-built binaries on [Releases](https://github.com/SolidifiedPlayDoh/cup-guard/releases):
+one click:
 
-- macOS: `CupGuard.app` in a zip
-- Windows: `CupGuard.exe`
+- [macOS](https://github.com/SolidifiedPlayDoh/cup-guard/releases/download/v1.1.0/CupGuard-macOS-arm64.zip) — `CupGuard.app` in a zip
+- [Windows](https://github.com/SolidifiedPlayDoh/cup-guard/releases/download/v1.1.0/CupGuard.exe)
 
-github actions builds them when i tag a version. fancy.
+more releases on [GitHub](https://github.com/SolidifiedPlayDoh/cup-guard/releases) if you want older builds or whatever
 
 
-## install (from source)
+## install (from source) (elite nerd mode (epic))
 
 you need python 3.11+ and [uv](https://docs.astral.sh/uv/) because i have standards (barely).
 
